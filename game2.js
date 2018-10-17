@@ -5,7 +5,7 @@ let userHealth = 15;
 let userName = "Player 1";
 
 const startGame = () => {
-    const wantToPlay = prompt("Would you like to start a match against the Almighty Grant??");
+    const wantToPlay = prompt("Would you like to start a match against Grant??");
 
     if (wantToPlay === "yes") {
         userName = prompt("Enter your name");
@@ -13,7 +13,7 @@ const startGame = () => {
         return startTurn();
     }
     else {
-        console.log("Should have said 'yes'! Come back again!");
+        console.log("Come play again soon!");
     }
 
     return 0;
@@ -34,7 +34,7 @@ const startTurn = () => {
 
         startTurn()
     } else if (fightCommand === "quit") {
-        console.log("Game Over. Bye!");
+        console.log("Game Over");
     }
 
     return null;
@@ -52,7 +52,7 @@ const displayCurrentHealth = () => {
 }
 
 if (startGame()) {
-    console.log("YOU BEAT THE ALMIGHT GRANT!");
+    console.log("YOU BEAT GRANT!");
 } else {
     console.log("YOU LOSE!");
 }
